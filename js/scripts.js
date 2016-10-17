@@ -17,6 +17,34 @@ var reverseLetters = function(letters) {
 };
 
 var reverseLettersResult = reverseLetters(sentenceChangerResult);
-// calling reverseLetters function and adding sentenceChangerResults from above and assinging to a var
+// calling reverseLetters function and adding sentenceChangerResults from above and assigning to a var
 
 console.log(reverseLettersResult);
+
+// Incorporates last two functions inside single function
+
+var changerReverse = function(sentenceInput) {
+  var firstFunction = sentenceChanger(sentenceInput);
+  console.log(firstFunction);
+
+  var secondFunction = reverseLetters(firstFunction);
+  console.log(secondFunction);
+
+  return sentenceInput + secondFunction;
+};
+
+var userInputTwo = prompt("Enter a second sentence");
+console.log(changerReverse(userInputTwo));
+
+// Fourth Function: counts # of letters, divides by 2, rounds down, output letter at that index, concatenates that letter at the beginning of the original sentence
+// Bonus: take final result and reverse it
+// Use jQuery, make 2 clickable imgs, one img original sentence, second img ciphered sentence
+
+var letterCounter = function(sentence) {
+  var count = sentence.length;
+  count = parseInt(count / 2);
+  count = sentence.charAt(count);
+  return count + sentence;
+};
+
+console.log(letterCounter("temporary"));
