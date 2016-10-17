@@ -34,7 +34,7 @@ $(document).ready(function() {
   };
 
   // var userInputTwo = prompt("Enter a second sentence");
-  console.log(changerReverse(userInputTwo));
+  // console.log(changerReverse(userInputTwo));
 
   // Fourth Function: counts # of letters, divides by 2, rounds down, output letter at that index, concatenates that letter at the beginning of the original sentence
   // Bonus: take final result and reverse it
